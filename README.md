@@ -1,2 +1,1 @@
-# SieuvuR
-FPT University
+# week1-css-HW1
