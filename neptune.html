@@ -6,30 +6,46 @@
     <title>Neptune</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
+
+    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <script src="dist/js/lightbox-plus-jquery.js" defer></script>
 </head>
 <body onload="displayPlanetInfo('neptune')"> 
     <h1 id="start-page">Welcome to the Planetary Exploration Website</h1>
     <hr>
     <h3>Hover over the planets to learn more about them!</h3>
-    <a href = "#main-content" class="skip-link">Skip to main content</a>    <nav>
+    <a href = "#main-content" class="skip-link">Skip to main content</a>    
+    <nav>
         <ul class="grid-content">
-            <li id="earth" 
-            onmouseover="displayPlanetInfo(this.id)" 
-            onmouseleave="displayPlanetInfo('neptune')">
-                <a href="earth.html">
-                <img src="images/earth.gif" alt="Earth" class="planet-image"></a>
-                <p>Earth</p>
-            </li>
-            <li id="mars" 
-            onmouseover="displayPlanetInfo(this.id)" 
-            onmouseleave="displayPlanetInfo('neptune')"><a href="mars.html">
-                <img src="images/mars.gif" alt="Mars" class="planet-image"></a>
-                <p>Mars</p>
-            </li>
-            <li id="neptune" class="current-planet"><a href="neptune.html">
-                <img src="images/neptune.gif" alt="Neptune" class="planet-image"></a>
-                <p>Neptune</p>
-            </li>
+            <a href="earth.html"
+                id="earth" 
+                onmouseover="displayPlanetInfo(this.id)"
+                onmouseleave="displayPlanetInfo('neptune')"
+                onfocus="displayPlanetInfo(this.id)"
+                onblur="displayPlanetInfo('neptune')">
+                <li>
+                    <img src="images/earth.gif" alt="Earth" class="planet-image">
+                    <p>Earth</p>
+                </li>
+            </a>
+            <a href="mars.html"
+                id="mars" 
+                onmouseover="displayPlanetInfo(this.id)"
+                onmouseleave="displayPlanetInfo('neptune')"
+                onfocus="displayPlanetInfo(this.id)"
+                onblur="displayPlanetInfo('neptune')">
+                <li >
+                    <img src="images/mars.gif" alt="Mars" class="planet-image">
+                    <p>Mars</p>
+                </li>
+            </a>
+            <a href="neptune.html"
+                id="neptune">
+                <li  class="current-planet">
+                    <img src="images/neptune.gif" alt="Neptune" class="planet-image">
+                    <p>Neptune</p>
+                </li>
+            </a>
         </ul>
     </nav>
 
@@ -46,10 +62,18 @@
         <div class="planet-image-container">
             <h1>Neptune's Landscapes</h1>
             <div class="planet-gallery">
-                <img src="images/neptune-cut.jpg" alt="Neptune's cross-section" >
-                <img src="images/neptune-info.jpg" alt="Information about Neptune" >
-                <img src="images/neptune-info2.webp" alt="More information about Neptune" >
-                <img src="images/neptune-ring.jpg" alt="Neptune's rings" >
+                <a href="images/neptune-cut.jpg" data-lightbox="neptune" data-title="Neptune's cross-section">
+                    <img src="images/neptune-cut.jpg" alt="Neptune's cross-section" >
+                </a>
+                <a href="images/neptune-info.jpg" data-lightbox="neptune" data-title="Information about Neptune">
+                    <img src="images/neptune-info.jpg" alt="Information about Neptune" >
+                </a>
+                <a href="images/neptune-info2.webp" data-lightbox="neptune" data-title="More information about Neptune">
+                    <img src="images/neptune-info2.webp" alt="More information about Neptune" >
+                </a>
+                <a href="images/neptune-ring.jpg" data-lightbox="neptune" data-title="Neptune's rings">
+                    <img src="images/neptune-ring.jpg" alt="Neptune's rings" >
+                </a>
             </div>
         </div>
     </main>

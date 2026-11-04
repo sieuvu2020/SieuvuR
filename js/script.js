@@ -36,3 +36,8 @@ function displayPlanetInfo(planet) {
     planetInfoDiv.style.backgroundPosition = "center";
     planetInfoDiv.style.backgroundRepeat = "no-repeat";
 }
+
+var images = document.querySelectorAll(".grid-content img");
+for (var i = 0; i < images.length; i++) {
+    images[i].setAttribute("tabindex", "-1");
+}
