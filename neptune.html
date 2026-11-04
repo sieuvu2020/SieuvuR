@@ -5,22 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neptune</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
-<body>
+<body onload="displayPlanetInfo('neptune')"> 
     <h1 id="start-page">Welcome to the Planetary Exploration Website</h1>
     <hr>
+    <h3>Hover over the planets to learn more about them!</h3>
     <a href = "#main-content" class="skip-link">Skip to main content</a>    <nav>
         <ul class="grid-content">
-            <li >
+            <li id="earth" 
+            onmouseover="displayPlanetInfo(this.id)" 
+            onmouseleave="displayPlanetInfo('neptune')">
                 <a href="earth.html">
                 <img src="images/earth.gif" alt="Earth" class="planet-image"></a>
                 <p>Earth</p>
             </li>
-            <li><a href="mars.html">
+            <li id="mars" 
+            onmouseover="displayPlanetInfo(this.id)" 
+            onmouseleave="displayPlanetInfo('neptune')"><a href="mars.html">
                 <img src="images/mars.gif" alt="Mars" class="planet-image"></a>
                 <p>Mars</p>
             </li>
-            <li class="current-planet"><a href="neptune.html">
+            <li id="neptune" class="current-planet"><a href="neptune.html">
                 <img src="images/neptune.gif" alt="Neptune" class="planet-image"></a>
                 <p>Neptune</p>
             </li>
@@ -30,7 +36,7 @@
     <hr>
 
     <main id="main-content">
-        <div class="description">
+        <div class="description" id="planet-info" >
             <h1>Neptune</h1>
             <p>Neptune is the eighth and farthest known planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest by mass. Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, with 1.0243 times the mass of Uranus.</p>
             <p>Neptune is denser and physically smaller than Uranus because its greater mass causes more gravitational compression of its atmosphere. It is primarily composed of hydrogen, helium, and traces of hydrocarbons and possibly nitrogen, along with water, ammonia, and methane. The planet's atmosphere has a dynamic weather system with the fastest winds in the Solar System.</p>

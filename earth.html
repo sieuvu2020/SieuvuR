@@ -5,22 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earth</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
-<body>
+<body onload="displayPlanetInfo('earth')">
     <h1 id="start-page">Welcome to the Planetary Exploration Website</h1>
     <hr>
+    <h3>Hover over the planets to learn more about them!</h3>
     <a href = "#main-content" class="skip-link">Skip to main content</a>    <nav>
         <ul class="grid-content">
-            <li class="current-planet">
+            <li id="earth" class="current-planet">
                 <a href="earth.html">
                 <img src="images/earth.gif" alt="Earth" class="planet-image"></a>
                 <p>Earth</p>
             </li>
-            <li><a href="mars.html">
+            <li id="mars" 
+            onmouseover="displayPlanetInfo(this.id)"
+            onmouseleave="displayPlanetInfo('earth')">
+                <a href="mars.html">
                 <img src="images/mars.gif" alt="Mars" class="planet-image"></a>
                 <p>Mars</p>
             </li>
-            <li><a href="neptune.html">
+            <li id="neptune" 
+            onmouseover="displayPlanetInfo(this.id)" 
+            onmouseleave="displayPlanetInfo('earth')"><a href="neptune.html">
                 <img src="images/neptune.gif" alt="Neptune" class="planet-image"></a>
                 <p>Neptune</p>
             </li>
@@ -30,7 +37,7 @@
     <hr>
 
     <main id="main-content">
-        <div class="description">
+        <div class="description" id="planet-info">
             <h1>Earth</h1>
             <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
             <p>Earth's atmosphere consists mostly of nitrogen and oxygen. Earth's gravity interacts with other objects in space, especially the Sun and the Moon, Earth's only natural satellite. Earth orbits around the Sun in 365.25 days, a period known as an Earth year. During this time, Earth rotates about its axis about 366.25 times.</p>
