@@ -14,75 +14,82 @@
     <h1 id="start-page">Welcome to the Planetary Exploration Website</h1>
     <hr>
     <h3>Hover over the planets to learn more about them!</h3>
-    <a href = "#main-content" class="skip-link">Skip to main content</a>    
-    <nav>
-        <ul class="grid-content">
-            <a id="earth" 
-            href="earth.html">
-                <li class="current-planet">
-                    <img src="images/earth.gif" alt="Earth" class="planet-image">
-                    <p>Earth</p>
-                </li>
-            </a>
-            <a href="mars.html"
-                id="mars" 
-                onmouseover="displayPlanetInfo(this.id)"
-                onmouseleave="displayPlanetInfo('earth')"
-                onfocus="displayPlanetInfo(this.id)"
-                onblur="displayPlanetInfo('earth')">
-                <li >
-                    <img src="images/mars.gif" alt="Mars" class="planet-image">
-                    <p>Mars</p>
-                </li>
-            </a>
-            <a href="neptune.html"
-                id="neptune" 
-                onmouseover="displayPlanetInfo(this.id)" 
-                onmouseleave="displayPlanetInfo('earth')"
-                onfocus="displayPlanetInfo(this.id)"
-                onblur="displayPlanetInfo('earth')">
-                <li >
-                    <img src="images/neptune.gif" alt="Neptune" class="planet-image">
-                    <p>Neptune</p>
-                </li>
-            </a>
-        </ul>
-    </nav>
-
     <hr>
+    <a href = "#main-content" class="skip-link">Skip to main content</a>
 
-    <main id="main-content">
-        <div class="description" id="planet-info">
-            <h1>Earth</h1>
-            <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
-            <p>Earth's atmosphere consists mostly of nitrogen and oxygen. Earth's gravity interacts with other objects in space, especially the Sun and the Moon, Earth's only natural satellite. Earth orbits around the Sun in 365.25 days, a period known as an Earth year. During this time, Earth rotates about its axis about 366.25 times.</p>
-            <p>Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth. The gravitational interaction between Earth and the Moon causes ocean tides, stabilizes Earth's orientation on its axis, and gradually slows its rotation.</p>
+    <div id="display-layout"> 
+        <div id="nav__bar">
+            <nav>
+                <ul class="grid-content">
+                    <a id="earth" 
+                    href="earth.html">
+                        <li class="current-planet">
+                            <img src="images/earth.gif" alt="Earth" class="planet-image">
+                            <p>Earth</p>
+                        </li>
+                    </a>
+                    <a href="mars.html"
+                        id="mars" 
+                        onmouseover="displayPlanetInfo(this.id)"
+                        onmouseleave="displayPlanetInfo('earth')"
+                        onfocus="displayPlanetInfo(this.id)"
+                        onblur="displayPlanetInfo('earth')">
+                        <li >
+                            <img src="images/mars.gif" alt="Mars" class="planet-image">
+                            <p>Mars</p>
+                        </li>
+                    </a>
+                    <a href="neptune.html"
+                        id="neptune" 
+                        onmouseover="displayPlanetInfo(this.id)" 
+                        onmouseleave="displayPlanetInfo('earth')"
+                        onfocus="displayPlanetInfo(this.id)"
+                        onblur="displayPlanetInfo('earth')">
+                        <li >
+                            <img src="images/neptune.gif" alt="Neptune" class="planet-image">
+                            <p>Neptune</p>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
         </div>
-        <hr>
-        <div class="planet-image-container">
-            <h1>Earth's Landscapes</h1>
-            <div class="planet-gallery">
-                <a href="images/forest.jpg" data-lightbox="earth-landscapes" data-title="Forest on Earth">
-                    <img src="images/forest.jpg" alt="Forest on Earth">
-                </a>
-                <a href="images/mountain.avif" data-lightbox="earth-landscapes" data-title="Mountain on Earth">
-                    <img src="images/mountain.avif" alt="Mountain on Earth">
-                </a>
-                <a href="images/desert.jpg" data-lightbox="earth-landscapes" data-title="Desert on Earth">
-                    <img src="images/desert.jpg" alt="Desert on Earth">
-                </a>
-                <a href="images/river.jpg" data-lightbox="earth-landscapes" data-title="River on Earth">
-                    <img src="images/river.jpg" alt="River on Earth">
-                </a>
-                <a href="images/sea.avif" data-lightbox="earth-landscapes" data-title="Sea on Earth">
-                    <img src="images/sea.avif" alt="Sea on Earth">
-                </a>
-                <a href="images/urban.jpg" data-lightbox="earth-landscapes" data-title="Urban on Earth">
-                    <img src="images/urban.jpg" alt="Urban on Earth">
-                </a>
-            </div>
+
+        <div id="main__bar">
+            <main id="main-content">
+                <div class="description" id="planet-info">
+                    <h1>Earth</h1>
+                    <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. About 29.2% of Earth's surface is land with remaining 70.8% covered with water. Earth's distance from the Sun, physical properties and geological history have allowed life to evolve and thrive.</p>
+                    <p>Earth's atmosphere consists mostly of nitrogen and oxygen. Earth's gravity interacts with other objects in space, especially the Sun and the Moon, Earth's only natural satellite. Earth orbits around the Sun in 365.25 days, a period known as an Earth year. During this time, Earth rotates about its axis about 366.25 times.</p>
+                    <p>Earth's axis of rotation is tilted with respect to its orbital plane, producing seasons on Earth. The gravitational interaction between Earth and the Moon causes ocean tides, stabilizes Earth's orientation on its axis, and gradually slows its rotation.</p>
+                </div>
+                <hr>
+                <div class="planet-image-container">
+                    <h1>Earth's Landscapes</h1>
+                    <div class="planet-gallery">
+                        <a href="images/forest.jpg" data-lightbox="earth-landscapes" data-title="Forest on Earth">
+                            <img src="images/forest.jpg" alt="Forest on Earth">
+                        </a>
+                        <a href="images/mountain.avif" data-lightbox="earth-landscapes" data-title="Mountain on Earth">
+                            <img src="images/mountain.avif" alt="Mountain on Earth">
+                        </a>
+                        <a href="images/desert.jpg" data-lightbox="earth-landscapes" data-title="Desert on Earth">
+                            <img src="images/desert.jpg" alt="Desert on Earth">
+                        </a>
+                        <a href="images/river.jpg" data-lightbox="earth-landscapes" data-title="River on Earth">
+                            <img src="images/river.jpg" alt="River on Earth">
+                        </a>
+                        <a href="images/sea.avif" data-lightbox="earth-landscapes" data-title="Sea on Earth">
+                            <img src="images/sea.avif" alt="Sea on Earth">
+                        </a>
+                        <a href="images/urban.jpg" data-lightbox="earth-landscapes" data-title="Urban on Earth">
+                            <img src="images/urban.jpg" alt="Urban on Earth">
+                        </a>
+                    </div>
+                </div>
+            </main>
         </div>
-    </main>
+
+    </div>
 
     <footer>
         <p><i>Planetary Exploration.</i></p>

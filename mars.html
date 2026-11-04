@@ -14,69 +14,75 @@
     <h1 id="start-page">Welcome to the Planetary Exploration Website</h1>
     <hr>
     <h3>Hover over the planets to learn more about them!</h3>
-    <a href = "#main-content" class="skip-link">Skip to main content</a>    
-    <nav>
-        <ul class="grid-content">
-            <a href="earth.html"
-                id="earth" 
-                onmouseover="displayPlanetInfo(this.id)"
-                onmouseleave="displayPlanetInfo('mars')"
-                onfocus="displayPlanetInfo(this.id)"
-                onblur="displayPlanetInfo('mars')">
-                <li>
-                    <img src="images/earth.gif" alt="Earth" class="planet-image">
-                    <p>Earth</p>
-                </li>
-            </a>
-            <a href="mars.html"
-                id="mars">
-                <li  class="current-planet">
-                    <img src="images/mars.gif" alt="Mars" class="planet-image">
-                    <p>Mars</p>
-                </li>
-            </a>
-            <a href="neptune.html"
-                id="neptune" 
-                onmouseover="displayPlanetInfo(this.id)" 
-                onmouseleave="displayPlanetInfo('mars')"
-                onfocus="displayPlanetInfo(this.id)"
-                onblur="displayPlanetInfo('mars')">
-                <li >
-                    <img src="images/neptune.gif" alt="Neptune" class="planet-image">
-                    <p>Neptune</p>
-                </li>
-            </a>
-        </ul>
-    </nav>
-
     <hr>
+    <a href = "#main-content" class="skip-link">Skip to main content</a>    
 
-    <main id="main-content">
-        <div class="description" id="planet-info">
-            <h1>Mars</h1>
-            <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".</p>
-            <p>Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and polar ice caps of Earth. The days and seasons are comparable to those of Earth, because the rotational period as well as the tilt of the rotational axis relative to the ecliptic plane are similar.</p>
-            <p>Mars is currently host to eight artificial satellites orbiting it. They are used primarily for communication and reconnaissance, but some are also used for navigation and weather monitoring. The first spacecraft to visit Mars was Mariner 4 in 1965.</p>
+    <div id="display-layout"> 
+        <div id="nav__bar">
+            <nav>
+                <ul class="grid-content">
+                    <a href="earth.html"
+                        id="earth" 
+                        onmouseover="displayPlanetInfo(this.id)"
+                        onmouseleave="displayPlanetInfo('mars')"
+                        onfocus="displayPlanetInfo(this.id)"
+                        onblur="displayPlanetInfo('mars')">
+                        <li>
+                            <img src="images/earth.gif" alt="Earth" class="planet-image">
+                            <p>Earth</p>
+                        </li>
+                    </a>
+                    <a href="mars.html"
+                        id="mars">
+                        <li  class="current-planet">
+                            <img src="images/mars.gif" alt="Mars" class="planet-image">
+                            <p>Mars</p>
+                        </li>
+                    </a>
+                    <a href="neptune.html"
+                        id="neptune" 
+                        onmouseover="displayPlanetInfo(this.id)" 
+                        onmouseleave="displayPlanetInfo('mars')"
+                        onfocus="displayPlanetInfo(this.id)"
+                        onblur="displayPlanetInfo('mars')">
+                        <li >
+                            <img src="images/neptune.gif" alt="Neptune" class="planet-image">
+                            <p>Neptune</p>
+                        </li>
+                    </a>
+                </ul>
+            </nav>
         </div>
-        <hr>
-        <div class="planet-image-container">
-            <h1>Mars' Landscapes</h1>
-            <div class="planet-gallery">
-                <a href="images/mars-cut.jpg" data-lightbox="mars" data-title="Marsplanet's cross-section">
-                    <img src="images/mars-cut.jpg" alt="Marsplanet's cross-section" >
-                </a>
-                <a href="images/mars-info.webp" data-lightbox="mars" data-title="Information about Mars">
-                    <img src="images/mars-info.webp" alt="Information about Mars" >
-                </a>
-                <a href="images/mars-info2.jpg" data-lightbox="mars" data-title="More information about Mars">
-                    <img src="images/mars-info2.jpg" alt="More information about Mars" >
-                </a>
-                <a href="images/mars-temp.jpg" data-lightbox="mars" data-title="Mars temperature">
-                    <img src="images/mars-temp.jpg" alt="Mars temperature" >
-                </a>
-            </div>
+
+        <div id="main__bar">
+            <main id="main-content">
+                <div class="description" id="planet-info">
+                    <h1>Mars</h1>
+                    <p>Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, being larger than only Mercury. In English, Mars carries the name of the Roman god of war and is often referred to as the "Red Planet".</p>
+                    <p>Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and polar ice caps of Earth. The days and seasons are comparable to those of Earth, because the rotational period as well as the tilt of the rotational axis relative to the ecliptic plane are similar.</p>
+                    <p>Mars is currently host to eight artificial satellites orbiting it. They are used primarily for communication and reconnaissance, but some are also used for navigation and weather monitoring. The first spacecraft to visit Mars was Mariner 4 in 1965.</p>
+                </div>
+                <hr>
+                <div class="planet-image-container">
+                    <h1>Mars' Landscapes</h1>
+                    <div class="planet-gallery">
+                        <a href="images/mars-cut.jpg" data-lightbox="mars" data-title="Marsplanet's cross-section">
+                            <img src="images/mars-cut.jpg" alt="Marsplanet's cross-section" >
+                        </a>
+                        <a href="images/mars-info.webp" data-lightbox="mars" data-title="Information about Mars">
+                            <img src="images/mars-info.webp" alt="Information about Mars" >
+                        </a>
+                        <a href="images/mars-info2.jpg" data-lightbox="mars" data-title="More information about Mars">
+                            <img src="images/mars-info2.jpg" alt="More information about Mars" >
+                        </a>
+                        <a href="images/mars-temp.jpg" data-lightbox="mars" data-title="Mars temperature">
+                            <img src="images/mars-temp.jpg" alt="Mars temperature" >
+                        </a>
+                    </div>
+                </div>
+            </main>
         </div>
-    </main>
+    </div>
 
     <footer>
         <p><i>Planetary Exploration.</i></p>

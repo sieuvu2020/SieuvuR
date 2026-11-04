@@ -21,6 +21,28 @@ body::before {
     z-index: -1;
 }
 
+h1, h3 {
+    color: #fff;
+    font-family: 'Courier New', monospace;
+    margin: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p{
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
 #planet-info {
   position: relative;
   background-size: cover;
@@ -48,13 +70,16 @@ body::before {
 }
 
 .grid-content {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
     text-decoration: none;
     list-style: none;
-
+    justify-content: space-evenly;
+    width:auto;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .grid-content li {
@@ -69,8 +94,10 @@ body::before {
     align-items: center;
     justify-content: space-evenly;
     background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
 
 }
+
 
 .grid-content a:hover, .grid-content a:focus {
     transform: scale(1.1);
@@ -89,7 +116,8 @@ body::before {
 
 
 .planet-image {
-    width: 100px;
+    width: 70%;
+    min-width: 90px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -145,17 +173,7 @@ body::before {
     border: 2px solid #ccc;
 }
 
-h1, h3 {
-    color: #fff;
-    font-family: 'Courier New', monospace;
-    margin: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
 
-p{
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-}
 
 .description h1, .description p{
     color: #000;
@@ -176,12 +194,18 @@ p{
     background-color: #333;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.473);
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+@media only screen and (min-width: 772px) {
+    #display-layout{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    #display-layout #nav__bar {
+        width: 30vw;
+    }
+
+    #display-layout #main__bar {
+        width: 70vw;
+    }
 }
+
